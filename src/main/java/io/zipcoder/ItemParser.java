@@ -39,7 +39,7 @@ public class ItemParser {
         int tempIndex = 0;
 //        while (matcher.find()) {
         for (String s : keyValuePairs) {
-            String[] keyValueSplit = s.split("[:@^%]");
+            String[] keyValueSplit = s.split("[:@^%*]");
             keyValueSplit[1] = keyValueSplit[1].toLowerCase();
             System.out.println("key value split index[1]: " + keyValueSplit[1]);
             temp[tempIndex] = keyValueSplit[1].replaceAll("#", "");
